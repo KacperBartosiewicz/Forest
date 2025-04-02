@@ -49,3 +49,30 @@
 		}
 	}
 }
+
+@media (min-width: 576px) {
+	
+}
+
+
+
+@media (min-width: 768px) {
+	.nav {
+		&__btn {
+			display: none;
+		}
+		&__links {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&-desktop {
+				display: flex;
+				align-items: center;
+			}
+			&-mobile {
+				display: none;
+				
+			}
+		}
+	}
+}
