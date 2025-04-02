@@ -1,0 +1,51 @@
+@use '../utilities/colors' as *;
+
+.header {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 8em;
+	z-index: 1;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em;
+	&__title {
+		font-size: 2.8rem;
+		text-decoration: none;
+		color: $main-color;
+	}
+	&__links {
+		display: none;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		background-color: $main-color;
+		top: 8em;
+		left: 0;
+		height: calc(100vh - 8em);
+		width: 100vw;
+		&-desktop {
+			display: none;
+		}
+	}
+	&__link {
+		font-size: 2.4rem;
+		text-decoration: none;
+		color: $white-color;
+	}
+	&__btn {
+		background: none;
+		padding: 0.5em 1em;
+		font-size: 1.6rem;
+		z-index: 1;
+		&-close {
+			display: none;
+		}
+	}
+}
