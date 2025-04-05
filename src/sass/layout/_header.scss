@@ -33,9 +33,13 @@
 			justify-content: space-around;
 			background-image: $bcg-color;
 			top: 8em;
-			left: 0;
+			left: 110%;
 			height: calc(100vh - 8em);
 			width: 100vw;
+			transition: left 0.5s;
+		}
+		&--active {
+			left: 0;
 		}
 	}
 
@@ -67,10 +71,16 @@
 		background: none;
 		border: none;
 		padding: 0.5em 1em;
-		font-size: 2rem;
+		font-size: 3rem;
 		z-index: 1;
 		cursor: pointer;
-		&-close {
+		&--close {
+			display: none;
+		}
+		&.active {
+			display: flex;
+		}
+		&.unactive {
 			display: none;
 		}
 	}
@@ -80,15 +90,11 @@
 		&__title {
 			font-size: 3.6em;
 		}
-		&__btn {
-			font-size: 2.4rem;
-		}
 	}
 }
 
 @media (min-width: 992px) {
 	.nav {
-		background-color: aqua;
 		&__links {
 			&--mobile {
 				display: none;
@@ -96,7 +102,6 @@
 			&--desktop {
 				display: flex;
 				padding: 2em;
-				background-color: red;
 			}
 		}
 		&__link {
