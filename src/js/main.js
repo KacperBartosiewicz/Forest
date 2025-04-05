@@ -12,6 +12,8 @@ const showNav = () => {
 	allMobileNavLinks.forEach(item => {
 		item.addEventListener('click', () => {
 			mobileNav.classList.remove('nav__links--active')
+			openBtn.classList.remove('unactive')
+			closeBtn.classList.remove('active')
 		})
 	})
 }
