@@ -7,17 +7,17 @@
 :root {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	overflow: hidden;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: $white-color;
+	overflow: hidden;
 }
 
 .wrapper {
-	margin: 0 2em;
-	width: 100%;
+	margin: 0 auto;
+	width: 90%;
 	height: 100%;
 	max-width: 1200px;
 }

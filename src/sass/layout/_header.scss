@@ -7,14 +7,17 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	position: fixed;
+	position: sticky;
+	top: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	height: 12em;
+	z-index: 1;
+	background-color: $white-color;
 	&__title {
-		font-size: 3.2rem;
+		font-size: clamp(3.2rem, 4vw, 4rem);
 		text-decoration: none;
 		color: $main-color;
 	}
@@ -30,20 +33,23 @@
 			align-items: center;
 			justify-content: space-around;
 			background-image: $bcg-color;
-			top: 8em;
-			left: 110%;
-			height: calc(100vh - 8em);
+			top: 12em;
+			left: 0;
+			height: calc(100vh - 12em);
 			width: 100vw;
-			transition: left 0.5s;
+			transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+			opacity: 0;
+			visibility: hidden;
 		}
 		&--active {
-			left: 0;
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 
 	&__link {
 		position: relative;
-		font-size: 2.4rem;
+		font-size: clamp(1.6rem, 2vw, 2.4rem);
 		text-decoration: none;
 		color: $white-color;
 
@@ -70,7 +76,7 @@
 		border: none;
 		padding: 0.5em;
 		font-size: 3rem;
-		z-index: 1;
+		z-index: 2;
 		cursor: pointer;
 		&--close {
 			display: none;
@@ -83,12 +89,41 @@
 		}
 	}
 }
-@media (min-width: 567px) {
-	.nav {
-		&__title {
-			font-size: 3.4rem;
+
+.header {
+	position: relative;
+	background-image: url('../img/jungle\ header\ -\ small.webp');
+	background-position: center;
+	background-size: cover;
+	height: 40em;
+	z-index: 0;
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.55);
+		z-index: -2;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		color: $white-color;
+		p {
+			font-size: clamp(2rem, 2vw, 2.8rem);
+			font-weight: 300;
+			margin-bottom: 0.2em;
+		}
+		h1 {
+			font-weight: 600;
+			font-size: clamp(2.6rem, 3vw, 4.4rem);
 		}
 	}
+}
+@media (min-width: 567px) {
 }
 
 @media (min-width: 768px) {
@@ -102,12 +137,10 @@
 				justify-content: flex-end;
 				width: 55%;
 				height: 100%;
-				background-color: aqua;
+				padding: 0 1em;
 			}
 		}
-		&__title {
-			font-size: 3.6rem;
-		}
+
 		&__link {
 			display: flex;
 			align-items: center;
@@ -116,7 +149,6 @@
 			background-color: #fff;
 			height: 100%;
 			width: 100%;
-			font-size: 2rem;
 			transition: background-color 0.5s, color 0.5s;
 			&::before {
 				display: none;
@@ -130,14 +162,9 @@
 			display: none;
 		}
 	}
+	.header {
+		background-image: url('../img/jungle\ header-big.webp');
+	}
 }
 @media (min-width: 992px) {
-	.nav {
-		&__link {
-			font-size: 2.6rem;
-		}
-		&__title {
-			font-size: 4rem;
-		}
-	}
 }
