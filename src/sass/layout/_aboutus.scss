@@ -2,7 +2,58 @@
 @use '../utilities/colors' as *;
 @use '../base/reset' as *;
 
-.section {
-	margin-top: 2em;
-    
+.aboutus {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		&-img {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			margin-bottom: 2em;
+		}
+		
+		&-title {
+			font-size: clamp(1.8rem, 2vw, 2.6rem);
+			margin-bottom: 0.5em;
+		}
+		&-text {
+			font-size: clamp(1.2rem, 2vw, 2rem);
+			line-height: 2em;
+			text-align: justify;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.aboutus {
+		&__box {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.aboutus {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: self-start;
+			// flex-wrap: wrap;
+			img {
+				padding-right: 2em;
+				width: 90%;
+			}
+			&-info {
+				width: 50%;
+			}
+			&-text {
+				font-size: clamp(1.2rem, 1.3vw, 1.8rem);
+			}
+		}
+	}
 }
