@@ -1,5 +1,6 @@
 @use 'sass:map';
 @use '../utilities/colors' as *;
+@use '../base/reset' as *;
 
 .nav {
 	.wrapper {
