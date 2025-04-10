@@ -1,6 +1,13 @@
 @use 'sass:map';
 @use '../utilities/colors' as *;
 @use '../base/reset' as *;
+
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+	height: 100%;
+	max-width: 1600px;
+}
 .section {
 	padding: 6em 2em;
 	height: 100%;
