@@ -41,7 +41,7 @@
 		}
 	}
 	&.hero:hover .hero__text::before {
-		animation: sizeUp 1s backwards;
+		animation: sizeUp 1s ;
 	}
 
 	@keyframes sizeUp {
