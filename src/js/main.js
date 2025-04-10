@@ -3,7 +3,8 @@ const openBtn = document.querySelector('.nav__btn--open')
 const closeBtn = document.querySelector('.nav__btn--close')
 const windowMedia = window.matchMedia('(min-width: 768px)')
 const allMobileNavLinks = mobileNav.querySelectorAll('.nav__link')
-console.log(allMobileNavLinks)
+
+
 
 const showNav = () => {
 	mobileNav.classList.toggle('nav__links--active')
