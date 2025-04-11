@@ -39,14 +39,22 @@
 			left: -110%;
 			width: 100%;
 			height: 100%;
-			background: rgba(170, 255, 161, 0.1);
-			transform: skew(-30deg);
-			transition: all 1s;
+
+			background: linear-gradient(153deg, rgba(155, 89, 42, 0.2) 0%, rgba(87, 199, 133, 0.3) 45%);
+			transform: skew(-45deg);
 		}
 	}
 
 	&.hero:hover .hero__text::after {
-		left: 110%;
+		animation: slide 2s;
+	}
+	@keyframes slide {
+		from {
+			left: -110%;
+		}
+		to {
+			left: 110%;
+		}
 	}
 }
 
