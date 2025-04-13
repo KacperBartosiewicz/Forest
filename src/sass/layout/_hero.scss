@@ -35,10 +35,9 @@
 			content: '';
 			position: absolute;
 			top: 0;
-			left: -110%;
+			left: -120%;
 			width: 100%;
 			height: 100%;
-
 			background: linear-gradient(153deg, rgba(155, 89, 42, 0.2) 0%, rgba(87, 199, 133, 0.3) 45%);
 			transform: skew(-45deg);
 		}
@@ -49,10 +48,10 @@
 	}
 	@keyframes slide {
 		from {
-			left: -110%;
+			left: -120%;
 		}
 		to {
-			left: 110%;
+			left: 120%;
 		}
 	}
 }
