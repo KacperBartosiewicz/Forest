@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-rel="stylesheet">
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 <script src="https://kit.fontawesome.com/a1f05848d0.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
@@ -22,7 +27,7 @@ rel="stylesheet">
         <div class="nav__links nav__links--desktop">
             <a href="#home" class="nav__link">Home</a>
             <a href="#aboutus" class="nav__link">O nas</a>
-            <a href="#offers" class="nav__link">Oferty</a>
+            <a href="#offer" class="nav__link">Oferta</a>
             <a href="#contact" class="nav__link">Kontakt</a>
         </div>
         <div class="nav__links nav__links--mobile  ">
@@ -73,8 +78,64 @@ rel="stylesheet">
             <p class="hero__text"> Przygoda dla całej rodziny</p>
         </section>
 
-        <section class="offers section-padding">
-
+        <section class="offer section-padding" id="offer">
+            <div class="wrapper">
+                <h2 class="section-heading">Oferta</h2>
+                <p class="offer-info">Wybierz jedną z naszych wspaniałych ofert!</p>
+                <div class="offer__cards">
+                    <div class="offer__card" onclick="void(0)">
+                        <h3 class="offer__card-title">Demo</h3>
+                        <p class="offer__card-price">$0</p>
+                        <ul class="offer__card-list">
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie</li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                            <li class="offer__card-list-item unavailable"><i class="fa-solid fa-minus"></i> opcja poza
+                                pakietem</li>
+                            <li class="offer__card-list-item unavailable"><i class="fa-solid fa-minus"></i> opcja poza
+                                pakietem</li>
+                            <li class="offer__card-list-item unavailable"><i class="fa-solid fa-minus"></i> opcja poza
+                                pakietem</li>
+                        </ul>
+                        <button class="offer__card-btn" onclick="void(0)">Wybierz</button>
+                    </div>
+                    <div class="offer__card" onclick="void(0)">
+                        <h3 class="offer__card-title">Standard</h3>
+                        <p class="offer__card-price">$99</p>
+                        <ul class="offer__card-list">
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie</li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                            <li class="offer__card-list-item unavailable"><i class="fa-solid fa-minus"></i> opcja poza
+                                pakietem</li>
+                            <li class="offer__card-list-item unavailable"><i class="fa-solid fa-minus"></i> opcja poza
+                                pakietem</li>
+                        </ul>
+                        <button class="offer__card-btn" onclick="void(0)">Wybierz</button>
+                    </div>
+                    <div class="offer__card" onclick="void(0)">
+                        <h3 class="offer__card-title">Premium</h3>
+                        <p class="offer__card-price">$299</p>
+                        <ul class="offer__card-list">
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie</li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                            <li class="offer__card-list-item available"><i class="fa-solid fa-check"></i> opcja w
+                                pakiecie </li>
+                        </ul>
+                        <button class="offer__card-btn" onclick="void(0)">Wybierz</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

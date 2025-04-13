@@ -17,7 +17,7 @@
 	height: 8em;
 	background-color: $white-color;
 	box-shadow: 0px 0px 4px rgb(89, 89, 89);
-	z-index: 1;
+	z-index: 5;
 
 	&__title {
 		font-size: clamp(3.2rem, 4vw, 4rem);
@@ -34,12 +34,12 @@
 			position: absolute;
 			flex-direction: column;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			background-image: $bcg-color;
 			top: 8em;
 			left: 0;
 			height: calc(100vh - 8em);
-			width: 100vw;
+			width: 100%;
 			transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
 			opacity: 0;
 			visibility: hidden;
@@ -52,7 +52,7 @@
 
 	&__link {
 		position: relative;
-		font-size: clamp(1.6rem, 2vw, 2.4rem);
+		font-size: clamp(2.2rem, 2vw, 2.4rem);
 		padding: 1em;
 		text-decoration: none;
 		color: $white-color;
@@ -139,7 +139,6 @@
 			&--desktop {
 				display: flex;
 				justify-content: flex-end;
-
 				height: 100%;
 				padding: 0 1em;
 			}
