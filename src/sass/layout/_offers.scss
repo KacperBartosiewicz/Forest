@@ -4,7 +4,7 @@
 .offer {
 	&-info {
 		text-align: center;
-		font-size: clamp(1.6rem, 2vw, 2.2rem);
+		font-size: clamp(1.6rem, 1vw + 1.2rem, 2.2rem);
 		margin-bottom: 2em;
 	}
 	&-link {
@@ -47,8 +47,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: clamp(250px, 25vw, 300px);
-		padding: 2em;
+		width: clamp(250px, 40vw, 320px);
+		padding: 2em 3em;
 		margin-bottom: 4em;
 		box-shadow: 0 3px 10px $mainGrey-color;
 		border-radius: 5px;
@@ -58,12 +58,12 @@
 			box-shadow: 0 3px 10px $green-color;
 		}
 		&-title {
-			font-size: clamp(2.2rem, 2vw, 3rem);
+			font-size: clamp(2.2rem, 1.5vw + 1.4rem, 3rem);
 			margin: 0.5em;
 			font-weight: normal;
 		}
 		&-price {
-			font-size: clamp(2.2rem, 3vw, 3.6rem);
+			font-size: clamp(2.2rem, 2vw + 1.4rem, 3.6rem);
 			font-family: 'Raleway', sans-serif;
 			font-weight: 600;
 			margin-bottom: 0.5em;
@@ -72,7 +72,7 @@
 			list-style: none;
 			&-item {
 				text-align: left;
-				font-size: clamp(1.5rem, 1vw, 1.9rem);
+				font-size: clamp(1.5rem, 0.7vw + 1rem, 1.9rem);
 				margin: 0.5em 0;
 				&.unavailable {
 					color: $mainGrey-color;
@@ -103,8 +103,19 @@
 
 @media (min-width: 768px) {
 	.offer {
-		&__card {
-			margin-right: 3em;
+		&__cards {
+			> :nth-child(1) {
+				margin-right: 3em;
+			}
+		}
+	}
+}
+@media (min-width: 1183px) {
+	.offer {
+		&__cards {
+			> :nth-child(2) {
+				margin-right: 3em;
+			}
 		}
 	}
 }

@@ -21,7 +21,7 @@
 	z-index: 5;
 
 	&__title {
-		font-size: clamp(3.2rem, 4vw, 4rem);
+		font-size: clamp(3.2rem, calc(2vw + 1.8rem), 4rem);
 		text-decoration: none;
 		color: $main-color;
 	}
@@ -55,7 +55,7 @@
 
 	&__link {
 		position: relative;
-		font-size: clamp(2.2rem, 2vw, 2.4rem);
+		font-size: clamp(2.2rem, 1vw + 1rem, 2.4rem);
 		padding: 1em;
 		text-decoration: none;
 		color: $white-color;
@@ -115,13 +115,13 @@
 		height: 100%;
 		color: $white-color;
 		p {
-			font-size: clamp(2rem, 2vw, 2.8rem);
+			font-size: clamp(2rem, 1vw + 1rem, 2.8rem);
 			font-weight: 300;
 			margin-bottom: 0.2em;
 		}
 		h1 {
 			font-weight: 600;
-			font-size: clamp(2.6rem, 3vw, 4.8rem);
+			font-size: clamp(2.6rem, 1.5vw + 2rem, 4.8rem);
 		}
 	}
 }
