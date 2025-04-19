@@ -9,12 +9,12 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	position: sticky;
+	position: fixed;
 	top: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 100dvw;
 	height: 8em;
 	background-color: $white-color;
 	box-shadow: 0px 0px 4px rgb(89, 89, 89);
@@ -32,15 +32,14 @@
 		}
 		&--mobile {
 			display: flex;
-			position: absolute;
+			position: fixed;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-evenly;
-			background-image: $bcg-color, url('../img/forest.webp');
-			@include heroImages;
+			background-color: $bgc-color;
 			top: 8em;
 			left: 0;
-			height: calc(100vh - 8em);
+			height: calc(100dvh - 8em);
 			width: 100%;
 			transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
 			opacity: 0;
@@ -100,7 +99,7 @@
 .header {
 	position: relative;
 	background-image: url('../img/jungle\ header-small.webp');
-	height: 40em;
+	height: 60em;
 	@include heroImages;
 	z-index: 0;
 	&__shadow {
@@ -147,7 +146,7 @@
 			align-items: center;
 			justify-content: center;
 			color: $main-color;
-			background-color: #fff;
+			background-color: transparent;
 			height: 100%;
 			width: 100%;
 			transition: background-color 0.5s, color 0.5s;
