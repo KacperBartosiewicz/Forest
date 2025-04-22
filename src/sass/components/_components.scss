@@ -26,3 +26,20 @@
 		padding: 8em 0;
 	}
 }
+
+.btn-style {
+	margin: 1em 0;
+	padding: 0.5em 1em;
+	width: 90%;
+	font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+	background-color: $white-color;
+	box-shadow: 0 2px 5px $mainGrey-color;
+	border-radius: 8px;
+	border: none;
+	transition: background-color 0.5s, box-shadow 0.5s;
+	cursor: pointer;
+	&:hover {
+		background-color: $green-color;
+		box-shadow: 0 3px 10px $green-color;
+	}
+}
