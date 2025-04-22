@@ -122,8 +122,8 @@
 		&-btn {
 			margin: 1em 0;
 			padding: 0.5em 1em;
-			width: 60%;
-			font-size: clamp(1.8rem, 1vw, 2.2rem);
+			width: 90%;
+			font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
 			background-color: $white-color;
 			box-shadow: 0 2px 5px $mainGrey-color;
 			border-radius: 8px;
@@ -139,19 +139,8 @@
 
 @media (min-width: 768px) {
 	.offer {
-		&__cards {
-			> :nth-child(1) {
-				margin-right: 3em;
-			}
-		}
-	}
-}
-@media (min-width: 1183px) {
-	.offer {
-		&__cards {
-			> :nth-child(2) {
-				margin-right: 3em;
-			}
+		&__card {
+			margin: 2em;
 		}
 	}
 }

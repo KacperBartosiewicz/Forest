@@ -20,7 +20,7 @@
 	box-shadow: 0px 0px 4px rgb(89, 89, 89);
 	z-index: 5;
 
-	&__title {
+	&-title {
 		font-size: clamp(3.2rem, calc(2vw + 1.8rem), 4rem);
 		text-decoration: none;
 		color: $main-color;
@@ -120,7 +120,7 @@
 		}
 		h1 {
 			font-weight: 600;
-			font-size: clamp(2.6rem, 1.5vw + 2rem, 4.8rem);
+			font-size: clamp(2.6rem, 1.5vw + 2.2rem, 5rem);
 		}
 	}
 }

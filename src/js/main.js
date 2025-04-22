@@ -12,8 +12,10 @@ const showNav = () => {
 	closeBtn.classList.toggle('active')
 	if (openBtn.classList.contains('unactive')) {
 		body.style.overflow = 'hidden'
+		nav.classList.remove('transp-bgc')
 	} else {
 		body.style.overflow = 'visible'
+		nav.classList.add('transp-bgc')
 	}
 	allMobileNavLinks.forEach(item => {
 		item.addEventListener('click', () => {
