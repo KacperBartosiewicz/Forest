@@ -5,7 +5,8 @@ const nav = document.querySelector('.nav')
 const windowMedia = window.matchMedia('(min-width: 768px)')
 const allMobileNavLinks = mobileNav.querySelectorAll('.nav__link')
 const body = document.querySelector('body')
-
+const footerYear = document.querySelector('.footer__year')
+console.log(new Date().getUTCDate())
 const showNav = () => {
 	mobileNav.classList.toggle('nav__links--active')
 	openBtn.classList.toggle('unactive')
@@ -45,6 +46,12 @@ const watchWindow = () => {
 	}
 }
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+handleCurrentYear()
 openBtn.addEventListener('click', showNav)
 closeBtn.addEventListener('click', showNav)
 windowMedia.addEventListener('change', watchWindow)
