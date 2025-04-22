@@ -4,18 +4,23 @@ const closeBtn = document.querySelector('.nav__btn--close')
 const nav = document.querySelector('.nav')
 const windowMedia = window.matchMedia('(min-width: 768px)')
 const allMobileNavLinks = mobileNav.querySelectorAll('.nav__link')
-console.log(nav)
-console.log(window.scrollX)
+const body = document.querySelector('body')
 
 const showNav = () => {
 	mobileNav.classList.toggle('nav__links--active')
 	openBtn.classList.toggle('unactive')
 	closeBtn.classList.toggle('active')
+	if (openBtn.classList.contains('unactive')) {
+		body.style.overflow = 'hidden'
+	} else {
+		body.style.overflow = 'visible'
+	}
 	allMobileNavLinks.forEach(item => {
 		item.addEventListener('click', () => {
 			mobileNav.classList.remove('nav__links--active')
 			openBtn.classList.remove('unactive')
 			closeBtn.classList.remove('active')
+			body.style.overflow = 'visible'
 		})
 	})
 }
