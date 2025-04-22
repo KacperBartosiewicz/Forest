@@ -19,11 +19,11 @@ const showNav = () => {
 		})
 	})
 }
-const transparentNav = () => {
+const transpNav = () => {
 	if (window.scrollY >= 100 && window.innerWidth < 768) {
-		nav.classList.add('transparent-bgc')
+		nav.classList.add('transp-bgc')
 	} else {
-		nav.classList.remove('transparent-bgc')
+		nav.classList.remove('transp-bgc')
 	}
 }
 
@@ -41,4 +41,4 @@ const watchWindow = () => {
 openBtn.addEventListener('click', showNav)
 closeBtn.addEventListener('click', showNav)
 windowMedia.addEventListener('change', watchWindow)
-window.addEventListener('scroll', transparentNav)
+window.addEventListener('scroll', transpNav)
