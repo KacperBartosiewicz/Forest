@@ -6,7 +6,8 @@ const windowMedia = window.matchMedia('(min-width: 768px)')
 const allMobileNavLinks = mobileNav.querySelectorAll('.nav__link')
 const body = document.querySelector('body')
 const footerYear = document.querySelector('.footer__year')
-console.log(new Date().getUTCDate())
+
+
 const showNav = () => {
 	mobileNav.classList.toggle('nav__links--active')
 	openBtn.classList.toggle('unactive')
