@@ -1,7 +1,7 @@
 @use '../utilities/colors' as *;
 .footer {
 	background-color: $footer-color;
-	padding-top: 8em;
+	padding-top: 5em;
 	&__boxes {
 		margin-bottom: 2em;
 		display: flex;
@@ -39,7 +39,7 @@
 	}
 
 	&__bottom-text {
-		padding: 2em;
+		padding: 1.5em;
 		font-size: clamp(1.2rem, 0.5vw + 1rem, 2rem);
 		text-align: center;
 		color: $main-color;

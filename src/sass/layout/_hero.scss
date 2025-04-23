@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	height: 20em;
+	height: 15em;
 	width: 100%;
 	background-image: url('../img/girl-small.webp');
 	background-position: center;
@@ -66,7 +66,7 @@
 
 @media (min-width: 768px) {
 	.hero {
-		height: 35em;
+		height: 25em;
 		background-image: url('../img/girl-big.webp');
 	}
 }

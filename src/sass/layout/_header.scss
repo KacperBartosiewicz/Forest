@@ -15,13 +15,13 @@
 	justify-content: center;
 	align-items: center;
 	width: 100dvw;
-	height: 8em;
+	height: 5em;
 	background-color: $white-color;
 	box-shadow: 0px 0px 4px rgb(89, 89, 89);
 	z-index: 5;
 
 	&-title {
-		font-size: clamp(3.2rem, calc(2vw + 1.8rem), 4rem);
+		font-size: clamp(3.2rem, calc(2vw + 1.8rem), 4.6rem);
 		text-decoration: none;
 		color: $main-color;
 	}
@@ -37,9 +37,9 @@
 			align-items: center;
 			justify-content: space-evenly;
 			background-color: $bgc-color;
-			top: 8em;
+			top: 5em;
 			left: 0;
-			height: calc(100dvh - 8em);
+			height: calc(100dvh - 5em);
 			width: 100%;
 			transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
 			opacity: 0;
@@ -99,7 +99,7 @@
 .header {
 	position: relative;
 	background-image: url('../img/jungle\ header-small.webp');
-	height: 60em;
+	height: 30em;
 	@include heroImages;
 	z-index: 0;
 	&__shadow {
@@ -168,6 +168,6 @@
 }
 @media (min-width: 992px) {
 	.nav {
-		height: 10em;
+		height: 6em;
 	}
 }
