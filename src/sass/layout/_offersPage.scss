@@ -58,7 +58,7 @@
 				padding: 0;
 			}
 			&-img {
-				width: 50%;
+				width: 40%;
 				height: auto;
 				border-radius: 0;
 
@@ -72,6 +72,13 @@
 				flex-direction: column;
 				justify-content: space-evenly;
 			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.offers {
+		&__box {
+			max-height: 400px;
 		}
 	}
 }
