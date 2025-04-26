@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Group</title>
+    <!-- @include 'styles.kit' -->
+</head>
+
+<body>
+    <!-- @includes 'otherPagesHeader.kit' -->
+
+    <main>
+        <section class="contact section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">kontakt</h2>
+                <div class="contact__box">
+                    <form class="contact__form">
+                        <h3 class="contact__form-title title">Skontaktuj się z nami <i
+                                class="fa-regular fa-envelope"></i></h3>
+                        <div class="contact__form-box">
+                            <input type="text" class="contact__form-input" id="name">
+                            <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                            <p class="contact__form-error">error</p>
+                        </div>
+                        <div class="contact__form-box">
+                            <input type="text" id="email" class="contact__form-input">
+                            <label for="email" class="contact__form-label">Adres e-mail:</label>
+                            <p class="contact__form-error">error</p>
+                        </div>
+                        <div class="contact__form-box">
+                            <textarea id="msg" class="contact__form-textarea"></textarea>
+                            <label for="msg" class="contact__form-label">Wiadomość:</label>
+                            <p class="contact__form-error">error</p>
+                        </div>
+                        <button class="contact__form-btn btn-style">Wyślij</button>
+                    </form>
+                    <div class="contact__map">
+                        <h3 class="contact__map-title title">Znajdziesz nas <i
+                                class="fa-solid fa-map-location-dot"></i></h3>
+                        <img src="../dist/img/climbing.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- @includes 'footer.kit' -->
+
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
