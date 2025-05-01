@@ -51,11 +51,11 @@
 				filter: blur(5px);
 				width: calc(100% + 4px);
 				height: calc(100% + 4px);
-				animation: glowing-button-85 30s linear infinite;
+				animation: glowing-btn 30s linear infinite;
 				border-radius: 10px;
 			}
 
-			@keyframes glowing-button-85 {
+			@keyframes glowing-btn {
 				0% {
 					background-position: 0 0;
 				}
