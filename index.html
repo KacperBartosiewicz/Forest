@@ -15,6 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 <script src="https://kit.fontawesome.com/a1f05848d0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
@@ -25,7 +27,7 @@
         <button class="nav__btn nav__btn--open "><i class="fa-solid fa-bars"></i></button>
         <button class="nav__btn nav__btn--close"><i class="fa-solid fa-xmark"></i></button>
         <div class="nav__links nav__links--desktop">
-            <a href="#home" class="nav__link">Home</a>
+            <a href="#home" class="nav__link active">Home</a>
             <a href="#aboutus" class="nav__link">O nas</a>
             <a href="#offer" class="nav__link">Oferta</a>
             <a href="contact.html#contact" class="nav__link">Kontakt</a>
@@ -40,14 +42,14 @@
     </div>
 </nav>
 
-<header class="header" id="home">
+<section class="header" id="home">
     <div class="header__shadow"></div>
     <div class="wrapper">
         <div class="header__text">
             <p>Forest Group</p>
             <h1>Najpięknieszy park w Twojej okolicy!</h1>
         </div>
-</header>
+</section>
 
     <main>
         <section class="aboutus section-padding" id="aboutus">

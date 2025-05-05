@@ -77,3 +77,11 @@ sendBtn.addEventListener('click', e => {
 	checkErrors()
 })
 closePopupBtn.addEventListener('click', closePopup)
+
+let map = L.map('map').setView([50.088215, 19.89282], 13)
+let marker = L.marker([50.088215, 19.89282]).addTo(map)
+marker.bindPopup("<b>Restauracja</b><br>McDonald's").openPopup();
+let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+})
+osm.addTo(map)

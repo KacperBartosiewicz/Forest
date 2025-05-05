@@ -1,6 +1,7 @@
 @use 'sass:map';
 @use '../utilities/colors' as *;
 @use '../components/mixins' as *;
+@use '../base/reset' as *;
 
 .nav {
 	.wrapper {
@@ -152,7 +153,8 @@
 			&::before {
 				display: none;
 			}
-			&:hover {
+			&:hover,
+			&.active {
 				background-color: $main-color;
 				color: $white-color;
 			}

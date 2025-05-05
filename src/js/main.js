@@ -6,8 +6,9 @@ const windowMedia = window.matchMedia('(min-width: 768px)')
 const allMobileNavLinks = mobileNav.querySelectorAll('.nav__link')
 const body = document.querySelector('body')
 const footerYear = document.querySelector('.footer__year')
-const sec = document.querySelectorAll('section')
-const links = document.querySelectorAll('.nav__link')
+const allSections = document.querySelectorAll('section')
+const desktoplinks = document.querySelectorAll('.nav__links--desktop .nav__link')
+
 
 const showNav = () => {
 	mobileNav.classList.toggle('nav__links--active')
@@ -47,16 +48,29 @@ const watchWindow = () => {
 		closeBtn.classList.remove('active')
 	}
 }
+window.onscroll = () => {
+	allSections.forEach(sec => {
+		let top = window.scrollY
+		let navHeight = nav.offsetHeight
+		let offset = sec.offsetTop - navHeight
+		let height = sec.offsetHeight
+		let id = sec.getAttribute('id')
+		if (top >= offset   && top < offset + height) {
+			desktoplinks.forEach(link => {
+				link.classList.remove('active')
+				document.querySelector('.nav__links--desktop .nav__link[href*=' + id + ']').classList.add('active')
+			})
+		}
+	})
+}
 
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
 	footerYear.innerText = year
 }
 
-
 handleCurrentYear()
 openBtn.addEventListener('click', showNav)
 closeBtn.addEventListener('click', showNav)
 windowMedia.addEventListener('change', watchWindow)
 window.addEventListener('scroll', transpNav)
-
