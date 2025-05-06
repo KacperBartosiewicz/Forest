@@ -93,6 +93,9 @@
 		&.unactive {
 			display: none;
 		}
+		&:focus {
+			border: 1px solid black;
+		}
 	}
 }
 
