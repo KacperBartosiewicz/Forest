@@ -94,7 +94,7 @@
 			display: none;
 		}
 		&:focus {
-			border: 1px solid black;
+			outline: 1px solid black;
 		}
 	}
 }
@@ -102,7 +102,7 @@
 .header {
 	position: relative;
 	background-image: url('../img/jungle\ header-small.webp');
-	height: 30em;
+	height: 25em;
 	@include heroImages;
 	z-index: 0;
 	&__shadow {
@@ -167,6 +167,7 @@
 		}
 	}
 	.header {
+		height: 30em;
 		background-image: url('../img/jungle\ header-big.webp');
 	}
 }

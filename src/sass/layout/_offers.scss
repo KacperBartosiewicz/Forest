@@ -85,7 +85,7 @@
 		width: clamp(300px, 40vw, 380px);
 		padding: 1em;
 		margin-bottom: 2.5em;
-		box-shadow: 0 3px 10px $mainGrey-color;
+		box-shadow: 0 3px 10px $box-shadow-color;
 		border-radius: 5px;
 		transition: transform 0.5s, box-shadow 0.5s;
 		&:hover {
