@@ -34,7 +34,7 @@
 	width: 80%;
 	font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
 	background-color: $white-color;
-	box-shadow: 0 2px 5px $mainGrey-color;
+	box-shadow: 0 2px 5px $box-shadow-color;
 	border-radius: 8px;
 	border: none;
 	transition: background-color 0.5s, box-shadow 0.5s;

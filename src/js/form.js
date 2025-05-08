@@ -63,8 +63,7 @@ const checkErrors = () => {
 	}
 }
 
-const closePopup = () => {
-	popup.classList.remove('show-popup')
+const reloadPage = () => {
 	window.location.reload()
 }
 
@@ -76,7 +75,7 @@ sendBtn.addEventListener('click', e => {
 	checkMail(email)
 	checkErrors()
 })
-closePopupBtn.addEventListener('click', closePopup)
+closePopupBtn.addEventListener('click', reloadPage)
 
 let map = L.map('map').setView([50.088215, 19.89282], 13)
 let marker = L.marker([50.088215, 19.89282]).addTo(map)
